@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DiabloModelStoreContainer" CdmEntityContainer="DiabloEntities">
+    <EntitySetMapping Name="Characters">
+      <EntityTypeMapping TypeName="DiabloModel.Characters">
+        <MappingFragment StoreEntitySet="Characters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="DiabloModel.Games">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="GameTypeId" ColumnName="GameTypeId" />
+          <ScalarProperty Name="IsFinished" ColumnName="IsFinished" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameTypes">
+      <EntityTypeMapping TypeName="DiabloModel.GameTypes">
+        <MappingFragment StoreEntitySet="GameTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BonusStatsId" ColumnName="BonusStatsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="DiabloModel.Items">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ItemTypeId" ColumnName="ItemTypeId" />
+          <ScalarProperty Name="StatisticId" ColumnName="StatisticId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="MinLevel" ColumnName="MinLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemTypes">
+      <EntityTypeMapping TypeName="DiabloModel.ItemTypes">
+        <MappingFragment StoreEntitySet="ItemTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics">
+      <EntityTypeMapping TypeName="DiabloModel.Statistics">
+        <MappingFragment StoreEntitySet="Statistics">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Strength" ColumnName="Strength" />
+          <ScalarProperty Name="Defence" ColumnName="Defence" />
+          <ScalarProperty Name="Mind" ColumnName="Mind" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="Luck" ColumnName="Luck" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DiabloModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsersGames">
+      <EntityTypeMapping TypeName="DiabloModel.UsersGames">
+        <MappingFragment StoreEntitySet="UsersGames">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GameId" ColumnName="GameId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CharacterId" ColumnName="CharacterId" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="JoinedOn" ColumnName="JoinedOn" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="GameTypeForbiddenItems" TypeName="DiabloModel.GameTypeForbiddenItems" StoreEntitySet="GameTypeForbiddenItems">
+      <EndProperty Name="GameTypes">
+        <ScalarProperty Name="Id" ColumnName="GameTypeId" />
+      </EndProperty>
+      <EndProperty Name="Items">
+        <ScalarProperty Name="Id" ColumnName="ItemId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserGameItems" TypeName="DiabloModel.UserGameItems" StoreEntitySet="UserGameItems">
+      <EndProperty Name="Items">
+        <ScalarProperty Name="Id" ColumnName="ItemId" />
+      </EndProperty>
+      <EndProperty Name="UsersGames">
+        <ScalarProperty Name="Id" ColumnName="UserGameId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

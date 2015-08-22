@@ -1,0 +1,10 @@
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\DiabloDatabase.exe.config
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\DiabloDatabase.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\DiabloDatabase.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\EntityFramework.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\EntityFramework.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\obj\Debug\DiabloDatabase.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\obj\Debug\DiabloDatabase.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\WebApiDemo\DiabloDatabase\obj\Debug\DiabloDatabase.pdb
