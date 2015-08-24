@@ -1,0 +1,16 @@
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\BookShopSystem.Data.dll.config
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\BookShopSystem.Data.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\BookShopSystem.Data.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\BookShopSystem.Models.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\BookShopSystem.Models.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\obj\Debug\BookShopSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\obj\Debug\BookShopSystem.Data.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\obj\Debug\BookShopSystem.Data.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Homework_ASP.NET-WebAPI\BookShopSystem\BookShopSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

@@ -1,0 +1,74 @@
+Edition ReleaseDate Copies Price AgeRestriction Title
+1 20/01/1998 27274 15,31 2 Absalom
+2 5/5/1997 6713 45,78 0 A che punto Ã¨ la notte
+0 14/09/1998 16159 35,56 0 After Many a Summer Dies the Swan
+0 13/03/1999 29025 23,71 0 Ah
+2 12/3/1993 9998 5,26 2 Wilderness!
+2 22/10/2014 18832 5,69 2 Alien CornÂ (play)
+0 18/02/2003 28741 34,56 2 The Alien CornÂ (short story)
+1 11/10/1991 20471 7,18 1 All Passion Spent
+2 29/03/1996 9457 45,6 0 All the King's Men
+2 30/11/2000 17327 14,99 0 Alone on a Wide
+0 23/04/1998 3226 24,37 1 Wide Sea
+1 8/3/1996 6171 34,64 2 An Acceptable Time
+2 7/9/2005 10049 38,51 1 Antic Hay
+1 10/10/1996 21765 3,3 0 An Evil Cradling
+0 24/01/2001 2408 24,4 0 Arms and the Man
+1 25/04/1992 2997 25,81 2 As I Lay Dying
+1 25/09/2006 29543 20,21 2 A Time to Kill
+2 28/10/2011 4893 18,01 0 Behold the Man
+1 23/08/2012 8159 23,83 2 Beneath the Bleeding
+2 17/05/2006 24103 45,45 2 Beyond the Mexique Bay
+0 25/03/2001 22304 16,68 1 Blithe Spirit
+0 4/5/2007 28137 28,97 2 Blood's a Rover
+2 3/3/1999 20946 9,76 0 Blue Remembered Earth
+0 27/07/2005 9177 37,17 2 Blue Remembered Hills
+1 29/10/2013 17688 19,51 0 Bonjour Tristesse
+0 6/5/2015 26819 5,63 1 Brandy of the Damned
+2 5/7/1987 4894 3,86 1 Bury My Heart at Wounded Knee
+1 5/5/2002 211 30,66 0 Butter In a Lordly Dish
+2 28/10/2010 28396 14,15 0 By Grand Central Station I Sat Down and Wept
+2 29/05/2002 15170 37,47 1 Cabbages and Kings
+1 28/01/2010 20513 3,32 0 Carrion Comfort
+0 3/12/1991 16585 15,78 2 A Catskill Eagle
+0 20/07/1990 14166 23,87 0 Clouds of Witness
+1 18/06/1993 29606 40,23 0 A Confederacy of Dunces
+0 6/11/1990 22390 46,43 2 Consider Phlebas
+1 21/07/1987 19292 30,89 0 Consider the Lilies
+1 28/10/2000 12346 40,23 1 Cover Her Face
+2 6/4/2013 2500 32,68 1 The Cricket on the Hearth
+0 10/10/1989 21714 23,41 1 The Curious Incident of the Dog in the Night-Time
+1 6/6/2000 16829 32,45 1 The Daffodil Sky
+0 8/9/2002 2036 46,52 0 Dance Dance Dance
+2 3/4/1995 25151 36,61 2 A Darkling Plain
+2 26/02/1989 3810 38,64 1 Death Be Not Proud
+0 20/12/2013 23115 2,26 1 The Doors of Perception
+2 4/4/2004 18437 24,86 2 Down to a Sunless Sea
+2 9/10/2007 2869 11,84 0 Dulce et Decorum Est
+1 15/08/1990 24100 18,58 2 Dying of the Light
+0 17/05/1988 9569 45,43 2 East of Eden
+1 18/09/2010 18857 22,55 2 Ego Dominus Tuus
+2 15/04/2009 24907 33,96 1 Endless Night
+0 27/01/1994 378 42,35 0 Everything is Illuminated
+0 8/9/1991 681 1,82 1 Eyeless in Gaza
+0 27/01/2013 29100 43,23 0 Fair Stood the Wind for France
+0 5/3/2002 20952 6,07 0 Fame Is the Spur
+0 6/12/1989 24985 9,41 2 A Fanatic Heart
+2 19/09/1998 19285 8,04 1 The Far-Distant Oxus
+1 10/1/1997 6733 6,05 0 A Farewell to Arms
+2 19/10/1990 205 19,52 0 Far From the Madding Crowd
+1 22/04/2013 2790 44,09 0 Fear and Trembling
+2 19/04/1993 5936 44,68 0 For a Breath I Tarry
+0 12/11/2010 5650 8,13 0 For Whom the Bell Tolls
+2 3/10/2000 22009 18,24 1 Frequent Hearses
+1 20/02/2004 13402 17,21 2 From Here to Eternity
+2 24/05/2004 20887 35,59 2 A Glass of Blessings
+2 14/08/2011 6127 43,19 1 The Glory and the Dream
+2 12/4/1993 3364 42,82 2 The Golden Apples of the Sun
+0 13/11/2004 661 38,52 0 The Golden Bowl
+0 9/5/1994 2653 26,76 0 Gone with the Wind
+2 1/6/1992 19998 22,43 2 The Grapes of Wrath
+2 5/10/2014 9344 1,06 1 Great Work of Time
+1 21/10/1998 17086 40,07 2 The Green Bay Tree
+0 24/10/1999 22125 48,63 0 A Handful of Dust
+1 15/05/2006 15875 30,37 0 Have His Carcase
