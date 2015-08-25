@@ -35,6 +35,9 @@ namespace BookShopSystem.Services.Models
     public class RegisterBindingModel
     {
         [Required]
+        public string Username { get; set; } // Add Username
+
+        [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
 

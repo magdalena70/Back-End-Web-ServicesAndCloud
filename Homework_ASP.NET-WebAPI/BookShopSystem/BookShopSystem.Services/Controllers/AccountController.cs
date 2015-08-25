@@ -329,7 +329,8 @@ namespace BookShopSystem.Services.Controllers
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };//
+            var user = new ApplicationUser() {
+                UserName = model.Username, Email = model.Email }; // Add Username
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 

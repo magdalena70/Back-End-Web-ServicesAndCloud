@@ -12,8 +12,14 @@ namespace BookShopSystem.Client
         static void Main()
         {
             var context = new BookShopSystemContext();
-            var authorCount = context.Authors.Count();
-            Console.WriteLine(authorCount);
+            var authors = context.Authors.Select(a => new {
+                Name = a.FirstName + " " + a.LastName
+            }).ToList();
+            foreach (var author in authors)
+            {
+                Console.WriteLine(author.Name); 
+            }
+            
 
             /*var books = context.Books
                 .Take(3)
