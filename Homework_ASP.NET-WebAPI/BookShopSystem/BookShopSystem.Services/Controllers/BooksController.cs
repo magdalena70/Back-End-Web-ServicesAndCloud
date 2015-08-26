@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using BookShopSystem.Models;
 using BookShopSystem.Services.Models.BindingModels;
+using BookShopSystem.Services.Models.ViewModels;
 
 namespace BookShopSystem.Services.Controllers
 {
@@ -15,23 +16,7 @@ namespace BookShopSystem.Services.Controllers
         public IHttpActionResult GetBooks()
         {
             var books = this.Data.Books
-                .Select(b => new
-                {
-                    Id = b.Id,
-                    Title = b.Title,
-                    Categories = b.Categories.Select(c => c.Name),
-                    Edition = b.Edition,
-                    Price = b.Price,
-                    Description = b.Description ?? null,
-                    Restriction = b.AgeRestriction,
-                    Copies = b.Copies,
-                    ReleaseDate = b.ReleaseDate,
-                    Author = new 
-                    {
-                        Id = b.Author.Id,
-                        FullName = b.Author.FirstName + " " + b.Author.LastName
-                    }
-                });
+                .Select(BookViewModel.Create);
 
             if(!books.Any())
             {
@@ -46,22 +31,7 @@ namespace BookShopSystem.Services.Controllers
         {
             var book = this.Data.Books
                 .Where(b => b.Id == id)
-                .Select(b => new
-                {
-                    Title = b.Title,
-                    Categories = b.Categories.Select(c => c.Name),
-                    Edition = b.Edition,
-                    Price = b.Price,
-                    Description = b.Description ?? null,
-                    Restriction = b.AgeRestriction,
-                    Copies = b.Copies,
-                    ReleaseDate = b.ReleaseDate,
-                    Author = new
-                    {
-                        Id = b.Author.Id,
-                        FullName = b.Author.FirstName  + " " + b.Author.LastName
-                    }
-                });
+                .Select(BookViewModel.Create);
 
             if (!book.Any())
             {
@@ -96,7 +66,7 @@ namespace BookShopSystem.Services.Controllers
         public IHttpActionResult ChangeBook(int id, Book changedBook)
         {
             var book = this.Data.Books
-                .First(b => b.Id == id);
+                .Find(id);
             if (book == null)
             {
                 return this.NotFound();
@@ -164,6 +134,7 @@ namespace BookShopSystem.Services.Controllers
                     {
                         Name = categoryName
                     };
+
                     categoryList.Add(category);
                 }
             }

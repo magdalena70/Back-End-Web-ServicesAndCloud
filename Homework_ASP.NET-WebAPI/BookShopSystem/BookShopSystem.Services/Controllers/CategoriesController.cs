@@ -1,6 +1,7 @@
 ﻿using BookShopSystem.Data;
 using BookShopSystem.Models;
 using BookShopSystem.Services.Models.BindingModels;
+using BookShopSystem.Services.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,7 @@ namespace BookShopSystem.Services.Controllers
         public IHttpActionResult GetCategories()
         {
             var categories = this.Data.Categories
-                .Select(c => new
-            {
-                Id = c.Id,
-                Name = c.Name
-            });
+                .Select(CategoryViewModel.Create);
             return this.Ok(categories);
         }
 

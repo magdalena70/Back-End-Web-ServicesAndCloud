@@ -1,6 +1,7 @@
 ﻿using BookShopSystem.Data;
 using BookShopSystem.Models;
 using BookShopSystem.Services.Models.BindingModels;
+using BookShopSystem.Services.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,11 @@ namespace BookShopSystem.Services.Controllers
 {
     public class AuthorsController : BaseApiController
     {
-        // GET Api/Authors
+        // GET api/Authors
         public IHttpActionResult GetAuthors()
         {
             var authors = this.Data.Authors
-                .Select(a => new
-            {
-                id = a.Id,
-                FullName = a.FirstName + " " + a.LastName,
-                BookTitles = a.Books.Select(b => b.Title)
-            });
+                .Select(AuthorWithBooksViewModel.Create);
 
             if (!authors.Any())
             {
@@ -30,16 +26,12 @@ namespace BookShopSystem.Services.Controllers
             return this.Ok(authors);
         }
 
-        // GET Api/authors/5
+        // GET api/Authors/5
         public IHttpActionResult GetAuthorById(int id)
         {
             var author = this.Data.Authors
                 .Where(a => a.Id == id)
-                .Select(a => new
-            {
-                FullName = a.FirstName + " " + a.LastName,
-                BookTitles = a.Books.Select(b => b.Title)
-            });
+                .Select(AuthorWithBooksViewModel.Create);
 
             if (!author.Any())
             {
@@ -49,33 +41,15 @@ namespace BookShopSystem.Services.Controllers
             return this.Ok(author);
         }
 
-        // GET	/api/authors/{id}/books
-        [Route("api/authors/{id}/books")]
+        // GET	/api/Authors/{id}/Books
+        [Route("api/Authors/{id}/Books")]
         public IHttpActionResult GetBooksByAuthorId(int id)
         {
             var books = this.Data.Books
                 .Where(b => b.Author.Id == id)
                 .OrderBy(b => b.Title)
                 .Take(10)
-                .Select(b => new
-                {
-                    Title = b.Title,
-                    Description = b.Description,
-                    Edition = b.Edition,
-                    Price = b.Price,
-                    Restriction = b.AgeRestriction,
-                    Copies = b.Copies,
-                    ReleaseDate = b.ReleaseDate,
-                    Author = new
-                    {
-                        AuthorId = b.Author.Id,
-                        AuthorFullName = b.Author.FirstName + " " + b.Author.LastName
-                    },
-                    Categories = b.Categories.Select(c => new
-                    {
-                        Name = c.Name
-                    })
-                });
+                .Select(BookViewModel.Create);
 
             if (!books.Any())
             {

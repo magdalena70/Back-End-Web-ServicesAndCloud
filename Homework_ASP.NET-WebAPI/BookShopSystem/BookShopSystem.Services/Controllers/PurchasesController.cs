@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Http;
 using Microsoft.AspNet.Identity;
 using BookShopSystem.Models;
+using BookShopSystem.Services.Models.ViewModels;
 
 namespace BookShopSystem.Services.Controllers
 {
@@ -61,21 +62,22 @@ namespace BookShopSystem.Services.Controllers
         [Authorize]
         public IHttpActionResult GetsAppPurchaseData(string username)
         {
-            var user = this.Data.Users
+            var searchedUser = this.Data.Users
                 .FirstOrDefault(u => u.UserName == username);
 
-            if (user == null)
+            if (searchedUser == null)
             {
                 return this.NotFound();
             }
 
-            var userName = user.UserName;
-            var purchases = user.Purchases.Select(p => new
+            var userName = searchedUser.UserName;
+            var purchases = searchedUser.Purchases.Select(p => new PurchaseViewModel
             {
-                p.Price,
-                p.Book.Title,
-                p.DateOfPurchase,
-                p.IsRecalled,
+                PurchasePrice = p.Price,
+                BookTitle = p.Book.Title,
+                BookPrice = p.Book.Price,
+                DateOfPurchase = p.DateOfPurchase,
+                IsRecalled = p.IsRecalled
             });
 
             var purchaseResult = new
