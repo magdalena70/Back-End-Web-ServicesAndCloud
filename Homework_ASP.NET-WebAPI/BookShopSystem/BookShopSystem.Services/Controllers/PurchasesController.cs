@@ -9,17 +9,16 @@ using BookShopSystem.Models;
 
 namespace BookShopSystem.Services.Controllers
 {
-    public class PurchasesController : ApiController
+    public class PurchasesController : BaseApiController
     {
         //PUT /api/Books/buy/{id}
         [Route("api/Books/buy/{id}")]
         [Authorize]
         public IHttpActionResult CreatePurchase(int id)
         {
-            var context = new BookShopSystemContext();
-            var book = context.Books.Find(id);
+            var book = this.Data.Books.Find(id);
             var currentUserId = this.User.Identity.GetUserId();
-            var user = context.Users
+            var user = this.Data.Users
                 .First(u => u.Id == currentUserId);
 
             if (book == null)
@@ -42,8 +41,8 @@ namespace BookShopSystem.Services.Controllers
             }
 
             book.Copies = book.Copies - 1;
-            context.Purchases.Add(purchase);
-            context.SaveChanges();
+            this.Data.Purchases.Add(purchase);
+            this.Data.SaveChanges();
 
             var purchaseResult = new
             {
@@ -59,12 +58,10 @@ namespace BookShopSystem.Services.Controllers
 
         // GET /api/User/{username}/Purchases
         [Route("api/User/{username}/Purchases")]
-        [HttpPut]
         [Authorize]
         public IHttpActionResult GetsAppPurchaseData(string username)
         {
-            var context = new BookShopSystemContext();
-            var user = context.Users
+            var user = this.Data.Users
                 .FirstOrDefault(u => u.UserName == username);
 
             if (user == null)

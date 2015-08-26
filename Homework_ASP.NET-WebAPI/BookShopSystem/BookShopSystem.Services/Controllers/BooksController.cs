@@ -9,13 +9,12 @@ using BookShopSystem.Services.Models.BindingModels;
 
 namespace BookShopSystem.Services.Controllers
 {
-    public class BooksController : ApiController
+    public class BooksController : BaseApiController
     {
         // GET api/Books
         public IHttpActionResult GetBooks()
         {
-            var context = new BookShopSystemContext();
-            var books = context.Books
+            var books = this.Data.Books
                 .Select(b => new
                 {
                     Id = b.Id,
@@ -45,8 +44,7 @@ namespace BookShopSystem.Services.Controllers
         // GET api/Books/{id}
         public IHttpActionResult GetBookById(int id)
         {
-            var context = new BookShopSystemContext();
-            var book = context.Books
+            var book = this.Data.Books
                 .Where(b => b.Id == id)
                 .Select(b => new
                 {
@@ -76,8 +74,7 @@ namespace BookShopSystem.Services.Controllers
         // GET /api/books?search={word}
         public IHttpActionResult GetBooksBySearchWord(string searchWord)
         {
-            var context = new BookShopSystemContext();
-            var books = context.Books
+            var books = this.Data.Books
                 .Where(b => b.Title.Contains(searchWord))
                 .Select(b => new
             {
@@ -98,8 +95,7 @@ namespace BookShopSystem.Services.Controllers
         [Authorize]
         public IHttpActionResult ChangeBook(int id, Book changedBook)
         {
-            var context = new BookShopSystemContext();
-            var book = context.Books
+            var book = this.Data.Books
                 .First(b => b.Id == id);
             if (book == null)
             {
@@ -119,7 +115,7 @@ namespace BookShopSystem.Services.Controllers
             book.RelatedBooks = changedBook.RelatedBooks ?? book.RelatedBooks;
 
 
-            context.SaveChanges();
+            this.Data.SaveChanges();
             return this.Ok("successful change");
         }
 
@@ -129,11 +125,10 @@ namespace BookShopSystem.Services.Controllers
         {
             try
             {
-                var context = new BookShopSystemContext();
-                var book = context.Books
+                var book = this.Data.Books
                     .First(b => b.Id == id);
-                context.Books.Remove(book);
-                context.SaveChanges();
+                this.Data.Books.Remove(book);
+                this.Data.SaveChanges();
                 return this.Ok("deleted successfully");
             }
             catch (Exception)
@@ -149,7 +144,7 @@ namespace BookShopSystem.Services.Controllers
         {
             if (model == null)
             {
-                this.ModelState.AddModelError("model", "the model is empty");
+                this.ModelState.AddModelError("model", "The model cannot be null - (request is empty).");
             }
 
             if (!ModelState.IsValid)
@@ -157,7 +152,6 @@ namespace BookShopSystem.Services.Controllers
                 return this.BadRequest(ModelState);
             }
 
-            var context = new BookShopSystemContext();
             var categories = model.Categories.Split(' ');
             var categoryList = new List<Category>();
 
@@ -183,18 +177,18 @@ namespace BookShopSystem.Services.Controllers
                 AgeRestriction = model.Restriction,
                 Copies = model.Copies,
                 ReleaseDate = DateTime.Now,
-                Author = context.Authors
+                Author = this.Data.Authors
                     .First(a => a.Id == model.AuthorId) ?? null,
-                RelatedBooks = context.Books
+                RelatedBooks = this.Data.Books
                     .Where(b => b.Id == model.BookId)
                     .ToList()
-                    .Count == 0 ? null : context.Books.Where(b => b.Id == model.BookId).ToList(),
+                    .Count == 0 ? null : this.Data.Books.Where(b => b.Id == model.BookId).ToList(),
                 Categories = categoryList ?? null
 
             };
 
-            context.Books.Add(book);
-            context.SaveChanges();
+            this.Data.Books.Add(book);
+            this.Data.SaveChanges();
             return this.Ok("created book  with id = " + book.Id);
         }
     }

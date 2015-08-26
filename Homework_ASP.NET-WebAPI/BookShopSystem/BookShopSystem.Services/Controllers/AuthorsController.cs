@@ -9,13 +9,12 @@ using System.Web.Http;
 
 namespace BookShopSystem.Services.Controllers
 {
-    public class AuthorsController : ApiController
+    public class AuthorsController : BaseApiController
     {
         // GET Api/Authors
         public IHttpActionResult GetAuthors()
         {
-            var context = new BookShopSystemContext();
-            var authors = context.Authors
+            var authors = this.Data.Authors
                 .Select(a => new
             {
                 id = a.Id,
@@ -34,8 +33,7 @@ namespace BookShopSystem.Services.Controllers
         // GET Api/authors/5
         public IHttpActionResult GetAuthorById(int id)
         {
-            var context = new BookShopSystemContext();
-            var author = context.Authors
+            var author = this.Data.Authors
                 .Where(a => a.Id == id)
                 .Select(a => new
             {
@@ -55,8 +53,7 @@ namespace BookShopSystem.Services.Controllers
         [Route("api/authors/{id}/books")]
         public IHttpActionResult GetBooksByAuthorId(int id)
         {
-            var context = new BookShopSystemContext();
-            var books = context.Books
+            var books = this.Data.Books
                 .Where(b => b.Author.Id == id)
                 .OrderBy(b => b.Title)
                 .Take(10)
@@ -93,15 +90,10 @@ namespace BookShopSystem.Services.Controllers
         [Authorize]
         public IHttpActionResult AddAuthor(AuthorBindingModel model)
         {
-            /*string loggedUserName = this.User.Identity.Name;
-            if(loggedUserName == null)
-            {
-                return this.Unauthorized();
-            }*/
 
             if (model == null)
             {
-                this.ModelState.AddModelError("model", "The model is empty");
+                this.ModelState.AddModelError("model", "The model cannot be null - (request is empty).");
             }
 
             if (!ModelState.IsValid)
@@ -109,20 +101,16 @@ namespace BookShopSystem.Services.Controllers
                 return this.BadRequest(this.ModelState);
             }
 
-            var context = new BookShopSystemContext();
             var author = new Author()
             {
                 FirstName = model.FirstName ?? null,
                 LastName = model.LastName
             };
 
-            context.Authors.Add(author);
-            context.SaveChanges();
+            this.Data.Authors.Add(author);
+            this.Data.SaveChanges();
 
             return this.Ok();
         }
-
-        
-
     }
 }

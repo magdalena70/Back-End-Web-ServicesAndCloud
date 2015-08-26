@@ -9,13 +9,12 @@ using System.Web.Http;
 
 namespace BookShopSystem.Services.Controllers
 {
-    public class CategoriesController : ApiController
+    public class CategoriesController : BaseApiController
     {
         // GET api/Categories
         public IHttpActionResult GetCategories()
         {
-            var context = new BookShopSystemContext();
-            var categories = context.Categories
+            var categories = this.Data.Categories
                 .Select(c => new
             {
                 Id = c.Id,
@@ -27,8 +26,7 @@ namespace BookShopSystem.Services.Controllers
         //GET /api/Categories/{id}
         public IHttpActionResult GetCategorieById(int id)
         {
-            var context = new BookShopSystemContext();
-            var category = context.Categories
+            var category = this.Data.Categories
                 .Where(c => c.Id == id)
                 .Select(c => new
             {
@@ -48,8 +46,7 @@ namespace BookShopSystem.Services.Controllers
         [Authorize]
         public IHttpActionResult ChangeCategorieById(int id, Category category)
         {
-            var context = new BookShopSystemContext();
-            var categoryToChange = context.Categories
+            var categoryToChange = this.Data.Categories
                 .First(c => c.Id == id);
             if (categoryToChange == null)
             {
@@ -57,7 +54,7 @@ namespace BookShopSystem.Services.Controllers
             }
 
             categoryToChange.Name = category.Name;
-            context.SaveChanges();
+            this.Data.SaveChanges();
             return this.Ok("successful change");
         }
 
@@ -68,11 +65,10 @@ namespace BookShopSystem.Services.Controllers
         {
             try
             {
-                var context = new BookShopSystemContext();
-                var category = context.Categories
+                var category = this.Data.Categories
                     .First(c => c.Id == id);
-                context.Categories.Remove(category);
-                context.SaveChanges();
+                this.Data.Categories.Remove(category);
+                this.Data.SaveChanges();
                 return this.Ok("deleted successfully");
             }
             catch (Exception)
@@ -88,7 +84,7 @@ namespace BookShopSystem.Services.Controllers
         {
             if (model == null)
             {
-                this.ModelState.AddModelError("model", "the model is empty");
+                this.ModelState.AddModelError("model", "The model cannot be null - (request is empty).");
             }
 
             if (!ModelState.IsValid)
@@ -101,9 +97,8 @@ namespace BookShopSystem.Services.Controllers
                 Name = model.Name,
             };
 
-            var context = new BookShopSystemContext();
-            context.Categories.Add(category);
-            context.SaveChanges();
+            this.Data.Categories.Add(category);
+            this.Data.SaveChanges();
             return this.Ok("created category  with id = " + category.Id);
         }
     }
