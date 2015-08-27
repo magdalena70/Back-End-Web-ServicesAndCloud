@@ -62,7 +62,7 @@ namespace BookShopSystem.Services.Controllers
 
         //PUT /api/Books/{id}
         [HttpPut]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult ChangeBook(int id, Book changedBook)
         {
             var book = this.Data.Books
@@ -90,13 +90,13 @@ namespace BookShopSystem.Services.Controllers
         }
 
         //DELETE /api/Books/{id}
-        [Authorize]
+        [Authorize(Roles="Admin")]
         public IHttpActionResult DeleteBook(int id)
         {
             try
             {
                 var book = this.Data.Books
-                    .First(b => b.Id == id);
+                    .Find(id);
                 this.Data.Books.Remove(book);
                 this.Data.SaveChanges();
                 return this.Ok("deleted successfully");
@@ -109,7 +109,7 @@ namespace BookShopSystem.Services.Controllers
 
         // POST	/api/books 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult AddBook(BookBindingModel model)
         {
             if (model == null)

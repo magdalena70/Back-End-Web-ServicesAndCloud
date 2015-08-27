@@ -12,13 +12,8 @@ namespace BookShopSystem.Client
         static void Main()
         {
             var context = new BookShopSystemContext();
-            var authors = context.Authors.Select(a => new {
-                Name = a.FirstName + " " + a.LastName
-            }).ToList();
-            foreach (var author in authors)
-            {
-                Console.WriteLine(author.Name); 
-            }
+            var user = context.Users.First();
+            Console.WriteLine("{0} - has {1} role(s)",user.UserName, user.Roles.Count());
             
 
             /*var books = context.Books

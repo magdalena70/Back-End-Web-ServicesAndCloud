@@ -40,7 +40,7 @@ namespace BookShopSystem.Services.Controllers
 
         //PUT /api/Categories/{id}
         [HttpPut]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult ChangeCategorieById(int id, Category category)
         {
             var categoryToChange = this.Data.Categories
@@ -57,7 +57,7 @@ namespace BookShopSystem.Services.Controllers
 
         //DELETE /api/Categories/{id}
         [HttpDelete]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult DeleteCategorie(int id)
         {
             try
@@ -76,7 +76,7 @@ namespace BookShopSystem.Services.Controllers
 
         //POST /api/categories
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult AddCategorie(CategoryBindingModel model)
         {
             if (model == null)

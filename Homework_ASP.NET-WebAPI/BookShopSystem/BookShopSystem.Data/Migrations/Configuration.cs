@@ -7,6 +7,7 @@ namespace BookShopSystem.Data.Migrations
     using System.Linq;
     using BookShopSystem.Models;
     using System.Globalization;
+    using Microsoft.AspNet.Identity.EntityFramework;
 
     internal sealed class Configuration : DbMigrationsConfiguration<BookShopSystem.Data.BookShopSystemContext>
     {
@@ -35,6 +36,43 @@ namespace BookShopSystem.Data.Migrations
             {
                 AddBooks(context);
             }
+
+            //Roles
+            if(context.Roles.Any())
+            {
+                return;
+            }
+
+            if(context.Users.Any())
+            {
+                AddRoles(context);
+            }
+
+        }
+
+        private static void AddRoles(BookShopSystemContext context)
+        {
+            var user = context.Users.First();
+            var adminRole = new IdentityRole()
+            {
+                Name = "Admin"
+            };
+
+            var moderatorRole = new IdentityRole()
+            {
+                Name = "Moderator"
+            };
+
+            context.Roles.Add(adminRole);
+            context.Roles.Add(moderatorRole);
+            context.SaveChanges();
+
+            adminRole.Users.Add(new IdentityUserRole()
+            {
+                UserId = user.Id
+            });
+
+            context.SaveChanges();
         }
 
         private static void AddBooks(BookShopSystemContext context)

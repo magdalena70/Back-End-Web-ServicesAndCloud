@@ -61,7 +61,7 @@ namespace BookShopSystem.Services.Controllers
 
         // POST api/Authors
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IHttpActionResult AddAuthor(AuthorBindingModel model)
         {
 
