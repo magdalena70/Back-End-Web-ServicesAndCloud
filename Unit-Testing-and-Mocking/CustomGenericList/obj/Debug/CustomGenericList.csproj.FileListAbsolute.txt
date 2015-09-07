@@ -1,0 +1,6 @@
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\bin\Debug\CustomGenericList.exe.config
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\bin\Debug\CustomGenericList.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\bin\Debug\CustomGenericList.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\obj\Debug\CustomGenericList.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\obj\Debug\CustomGenericList.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\CustomGenericList\obj\Debug\CustomGenericList.pdb

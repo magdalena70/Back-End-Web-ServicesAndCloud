@@ -1,0 +1,8 @@
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\bin\Debug\DependencyInversion.exe.config
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\bin\Debug\DependencyInversion.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\bin\Debug\DependencyInversion.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\obj\Debug\DependencyInversion.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\obj\Debug\DependencyInversion.exe
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\obj\Debug\DependencyInversion.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\bin\Debug\Ninject.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Unit-Testing-and-Mocking\DependencyInversion\bin\Debug\Ninject.xml
