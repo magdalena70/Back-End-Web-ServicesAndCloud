@@ -1,0 +1,13 @@
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\BugTracker.Data.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\BugTracker.Data.pdb
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\EntityFramework.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\EntityFramework.xml
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\obj\Debug\BugTracker.Data.dll
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\obj\Debug\BugTracker.Data.pdb
+C:\Users\acer\Desktop\BugTracker_ExamPreparation\BugTracker\BugTracker.Data\obj\Debug\BugTracker.Data.csprojResolveAssemblyReference.cache
