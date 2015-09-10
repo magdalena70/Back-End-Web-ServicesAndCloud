@@ -1,0 +1,12 @@
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\BidSystem.Data.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\BidSystem.Data.pdb
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\obj\Debug\BidSystem.Data.dll
+C:\Users\acer\Desktop\Bids_ExamPreparation\BidSystem\BidSystem.Data\obj\Debug\BidSystem.Data.pdb
