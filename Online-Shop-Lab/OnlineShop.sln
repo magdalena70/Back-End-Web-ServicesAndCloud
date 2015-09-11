@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Models", "OnlineShop.Models\OnlineShop.Models.csproj", "{BF075BFC-4A22-4DF8-9A8B-97E3C0F9FC5A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Data", "OnlineShop.Data\OnlineShop.Data.csproj", "{84E66899-5C39-4519-B8AA-FCCF06A7BBCB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Services", "OnlineShop.Services\OnlineShop.Services.csproj", "{B2B28E5A-B28A-4A01-8FEE-01F0B0CD3D46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop.Tests", "OnlineShop.Tests\OnlineShop.Tests.csproj", "{509BE776-2E34-49DC-89FD-4D4A9B5B8920}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B2B28E5A-B28A-4A01-8FEE-01F0B0CD3D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B28E5A-B28A-4A01-8FEE-01F0B0CD3D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B28E5A-B28A-4A01-8FEE-01F0B0CD3D46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509BE776-2E34-49DC-89FD-4D4A9B5B8920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509BE776-2E34-49DC-89FD-4D4A9B5B8920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509BE776-2E34-49DC-89FD-4D4A9B5B8920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509BE776-2E34-49DC-89FD-4D4A9B5B8920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

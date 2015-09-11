@@ -12,3 +12,17 @@ C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\2. ASP.NET-Web-API-
 C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\2. ASP.NET-Web-API-Online-Shop-Skeleton\OnlineShop.Models\obj\Debug\OnlineShop.Models.csprojResolveAssemblyReference.cache
 C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\2. ASP.NET-Web-API-Online-Shop-Skeleton\OnlineShop.Models\obj\Debug\OnlineShop.Models.dll
 C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\2. ASP.NET-Web-API-Online-Shop-Skeleton\OnlineShop.Models\obj\Debug\OnlineShop.Models.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\OnlineShop.Models.dll.config
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\OnlineShop.Models.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\OnlineShop.Models.pdb
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\EntityFramework.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\EntityFramework.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\obj\Debug\OnlineShop.Models.csprojResolveAssemblyReference.cache
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\obj\Debug\OnlineShop.Models.dll
+C:\Users\acer\Documents\GitHub\Back-End-Web ServicesAndCloud\Online-Shop-Lab\OnlineShop.Models\obj\Debug\OnlineShop.Models.pdb

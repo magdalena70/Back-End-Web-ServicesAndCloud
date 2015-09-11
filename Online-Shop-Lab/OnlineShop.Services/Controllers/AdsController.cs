@@ -1,26 +1,30 @@
-﻿using OnlineShop.Models;
-using OnlineShop.Services.Models.BindingModels;
-using OnlineShop.Services.Models.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using Microsoft.AspNet.Identity;
-using System.Collections;
-
-namespace OnlineShop.Services.Controllers
+﻿namespace OnlineShop.Services.Controllers
 {
+    using System;
+    using System.Linq;
+    using System.Web.Http;
+    using Infrastructure;
+    using Microsoft.AspNet.Identity;
+    using Models.BindingModels;
+    using Models.ViewModels;
+    using OnlineShop.Models;
+    using OnlineShop.Data.UnitOfWork;
+
     [Authorize]
     public class AdsController : BaseApiController
     {
+        public AdsController(IOnlineShopData data, IUserIdProvider userIdProvider)
+            : base(data, userIdProvider)
+        {
+        }
+
         // get all open ads
         [HttpGet]
         [Route("api/ads")]
         [AllowAnonymous]
         public IHttpActionResult GetAds()
         {
-            var ads = this.Data.Ads
+            var ads = this.Data.Ads.All()
                 .Where(a => a.Status == AdStatus.Open)
                 .OrderByDescending(a => a.TypeId)
                 .ThenBy(a => a.PostedOn)
@@ -44,9 +48,10 @@ namespace OnlineShop.Services.Controllers
                 return this.BadRequest(this.ModelState);
             }
 
-            if (!this.Data.AdTypes.Any(t => t.Id == model.TypeId))
+            if (!this.Data.AdTypes.All().Any(t => t.Id == model.TypeId))
             {
-                string badRequest = string.Format("There is no type with id - {0}", model.TypeId);
+                string badRequest = string.Format("There is no type with id - {0}",
+                    model.TypeId);
                 return this.BadRequest(badRequest);
             }
 
@@ -82,7 +87,7 @@ namespace OnlineShop.Services.Controllers
             this.Data.Ads.Add(ad);
             this.Data.SaveChanges();
 
-            var result = this.Data.Ads
+            var result = this.Data.Ads.All()
                 .Where(a => a.Id == ad.Id)
                 .Select(AdViewModel.Create)
                 .FirstOrDefault();
